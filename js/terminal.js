@@ -35,7 +35,7 @@ $(function ($, undefined) {
 		}
 		else if (command == '3') {
 			// window.open('./indexFront.html', '_blank');
-			this.echo("\n")
+			this.echo("\n");
 			this.echo("Another version coming soon");
 			this.echo("\n")
 		}
