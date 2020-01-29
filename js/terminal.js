@@ -34,7 +34,10 @@ $(function ($, undefined) {
 			this.echo("\n")
 		}
 		else if (command == '3') {
-			window.open('file:///Users/rohanagarwal/Desktop/ProfileWebsite/indexFront.html', '_blank');
+			// window.open('./indexFront.html', '_blank');
+			this.echo("\n")
+			this.echo("Another version coming soon");
+			this.echo("\n")
 		}
 
 		else {
