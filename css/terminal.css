@@ -1,0 +1,70 @@
+.terminal {
+	--color: yellow;
+	--background: black;
+	--animation: terminal-blink;
+}
+.terminal, .cmd, .terminal .terminal-output div div, .cmd .prompt  {
+	font-size: 18px;
+	line-height: 24px;
+	font-family: "COURIER", Times, serif;
+}
+
+.terminal .inverted, .cmd .inverted, .cmd .cursor.blink {
+	background-color: #0f0;
+	color: white;
+}
+.cmd .greetings{
+	color: green
+}
+/**
+** Blink Animation for the teriminal Cursor
+** Animation for color to toggle between green and white.
+**/
+@-webkit-keyframes terminal-blink {
+	0%, 100% {
+		background-color: #000;
+		color: #0f0;
+		margin: 0;
+	}
+	50% {
+		background-color: #0e0;
+		color: #000;
+		margin: 0;
+	}
+}
+@-ms-keyframes terminal-blink {
+	0%, 100% {
+		background-color: #000;
+		color: #0f0;
+		margin: 0;
+	}
+	50% {
+		background-color: #0e0;
+		color: #000;
+		margin: 0;
+	}
+}
+@-moz-keyframes terminal-blink {
+	0%, 100% {
+		background-color: #000;
+		color: #0f0;
+		margin: 0;
+	}
+	50% {
+		background-color: #0e0;
+		color: #000;
+		margin: 0;
+	}
+}
+@keyframes terminal-blink {
+	0%, 100% {
+		background-color: #000;
+		color: #0f0;
+		margin: 0;
+	}
+	50% {
+		background-color: #0e0;
+		color: #000;
+		margin: 0;
+	}
+}
