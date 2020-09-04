@@ -10,6 +10,28 @@
 	
 </head>
 <body>
+	<div id='jiosaavn-widget'></div>
+
+    <script>
+        (function (d, t) {
+            var f = document.getElementsByTagName(t)[0];
+            var s = document.createElement(t);
+            var s1 = document.createElement(t);
+            if (document.getElementById("jsw-init")) return;
+            s.setAttribute("id", "jsw-init");
+            s.setAttribute(
+                "src",
+                "https://qa.jiosaavn.com/embed/_s/embed.js?ver=" + Date.now()
+            );
+            s1.appendChild(
+                document.createTextNode(
+                    "var partner_url = window.location; var jswstClear=setInterval(function(){if (typeof JioSaavnEmbedWidget != 'undefined'){clearInterval(jswstClear);JioSaavnEmbedWidget.init({a:1,q:1, partner_id : 'jiosaavn123' , partner_url : partner_url, embed_src : 'https://qa.jiosaavn.com/embed/playlist/48667929' , audio_slot_id : '/6714/SaavnEmbedAudio_N18', banner_slot_id : '/6714/SaavnEmbedDisplay_N18', ad_div_id: 'div-gpt-ad-1568108185038-0' });}},(1000/60));"
+                )
+            );
+            document.body.appendChild(s);
+            document.body.appendChild(s1);
+        })(document, "script");
+    </script>
 	<div id="load"></div>
 	<div id="term_demo" style="visibility:hidden"></div>
 </body>
